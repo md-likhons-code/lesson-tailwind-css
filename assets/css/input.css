@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+    --color-bg-color-1: #FFFCF4;
+    --color-bg-color-2: #2E2100;
+    --color-text-color: #5F5B53;
+    --color-text-color-2: #BFBCB2;
+    --color-heading-color: #171100;
+    --color-orange-color: #FFB900;
+    --color-border-color-1: #E2DFDA;
+    --color-border-color-2: #59554B;
+
+    --breakpoint-*: initial;
+    --breakpoint-sm: 575.98px;
+    --breakpoint-md: 767.98px;
+    --breakpoint-lg: 991.98px;
+    --breakpoint-xl: 1199.98px;
+    --breakpoint-2xl: 1399.98px;
+}
+
+.container {
+    @apply mx-auto px-4 max-w-full md:max-w-225 lg:max-w-250 xl:max-w-300.5;
+}
+
+.fixed-header {
+    @apply sticky top-0 left-0 z-30;
+}
+
+.overlay {
+    @apply fixed inset-0 bg-black/50 z-40 pointer-events-none opacity-0 duration-300 transition-all;
+}
+
+.menu-after {
+    @apply relative duration-300 text-text-color after:content-[''] after:absolute after:bottom-0 after:left-[1px] after:h-0.5 after:w-2.5 after:duration-300 after:bg-heading-color after:opacity-0 hover:after:opacity-100 hover:font-semibold hover:text-heading-color;
+}
+
+.active-menu {
+    @apply font-semibold text-heading-color after:opacity-100;
+}
+
+.sign-up-btn {
+    @apply border border-heading-color bg-heading-color text-white px-5 sm:px-[41px] py-2 sm:py-[11px] leading-[1.86] rounded-[25px] font-semibold cursor-pointer duration-300 hover:bg-transparent hover:text-heading-color;
+}
+
+.menu-btn {
+    @apply rounded-full h-11 w-11 grid place-items-center bg-black border border-heading-color text-white hover:bg-transparent focus:bg-orange-color hover:text-heading-color duration-300 transition-all;
+}
+
+.mobile-menu {
+    @apply fixed top-0 -right-6/10 sm:-right-4/10 w-6/10 sm:w-4/10 h-[100vh] pt-20 pl-25 backdrop-blur-sm bg-white/80 z-50;
+}
+
+.cls-btn {
+    @apply absolute top-[5%] right-[10%] h-7 w-7 bg-white rounded-full grid place-items-center text-heading-color border border-white hover:bg-transparent duration-300 transition-all opacity-0;
+}
+
+.button-1 {
+    @apply border border-orange-color bg-orange-color text-white px-[33px] py-[17px] text-base xl:text-lg leading-[1.66] rounded-4xl font-semibold duration-300 transition-all hover:bg-transparent hover:text-heading-color;
+}
+
+.book-now-btn {
+    @apply px-5 sm:px-6 py-2.5 sm:py-3 text-sm font-semibold rounded-[25px] leading-[1.85] bg-heading-color text-white cursor-pointer duration-300 hover:bg-orange-color;
+}
+
+.sign-up-btn2 {
+    @apply border border-orange-color bg-orange-color text-white cursor-pointer px-[37px] py-[11px] rounded-[26px] font-semibold leading-[1.75] duration-300 hover:bg-transparent hover:text-heading-color
+}
+
+.date-after {
+    @apply after:absolute after:content-[''] after:h-[1px] after:w-[160px] after:bg-border-color-1 after:left-0 after:bottom-0
+}
+
+.blog-btn {
+    @apply text-sm font-semibold leading-[1.85] py-3 px-[21px] text-white bg-heading-color cursor-pointer duration-300 hover:bg-orange-color rounded-[25px];
+}
+
+.h4-after {
+    @apply after:absolute after:content-[''] after:-left-[25px] sm:after:left-0 after:bottom-0 after:h-[1px] after:w-32.5 after:bg-border-color-2;
+}
+
+.footer-hover {
+    @apply text-text-color-2 text-sm leading-[1.85] inline-block duration-300 relative after:absolute after:content-[''] after:left-0 after:-bottom-0.5 after:h-[1px] after:w-full after:bg-white after:transition-transform after:duration-300 after:scale-x-0 after:origin-left hover:after:scale-x-100 hover:after:origin-left;
+}   
