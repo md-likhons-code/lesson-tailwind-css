@@ -47,7 +47,7 @@
 }
 
 .mobile-menu {
-    @apply fixed top-0 -right-6/10 sm:-right-4/10 w-6/10 sm:w-4/10 h-[100vh] pt-20 pl-25 backdrop-blur-sm bg-white/80 z-50;
+    @apply fixed top-0 -right-6/10 sm:-right-4/10 w-6/10 sm:w-4/10 h-[100vh] pt-20 pl-6 sm:pl-25 backdrop-blur-sm bg-white/75 z-50;
 }
 
 .cls-btn {

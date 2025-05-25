@@ -66,18 +66,18 @@ var tl = gsap.timeline();
 
 tl.to(".mobile-menu", {
     right: 0,
-    duration: 0.57,
+    duration: 0.54,
 });
 
 tl.from(".mobile-menu ul li", {
     x: 150,
     opacity: 0,
-    stagger: 0.28,
-    duration: 0.77,
+    stagger: 0.25,
+    duration: 0.72,
 });
 
 tl.to(".cls-btn", {
-    opacity: 1
+    opacity: 1,
 });
 
 tl.pause();
